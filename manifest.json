@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "WordWise Assistant",
+  "version": "1.0",
+  "description": "Learn words instantly with AI pronunciation and simple meanings",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
